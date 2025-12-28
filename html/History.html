@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-image: url('../images/History_bg.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            font-family: 'Berlin Sans FB', Arial, sans-serif;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .back-button img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .title-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .main-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .text-box {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .text-box p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .text-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <img src="../images/Back.png" alt="Back">
+    </a>
+    
+    <div class="content-container">
+        <img src="../images/History_title.png" alt="History Title" class="title-image">
+        
+        <img src="../images/History_pic.png" alt="History Picture" class="main-image">
+        
+        <div class="text-box">
+            <p>Hydroponics has been around in different forms for thousands of years. Ancient civilizations like the Babylonians and the Aztecs used early versions of soilless farming. In the 1600s, Jan van Helmont showed that plants didn't get their mass from soil, which helped scientists understand plant growth better. In the 1800s, scientists like De Saussure, Boussingault, Sachs, and Knop discovered the nutrients plants need and grew plants in mineral water solutions. This research became the foundation of modern hydroponics.</p>
+            
+            <p>In the 20th century, William Frederick Gericke helped popularize hydroponics as a real farming method. Since then, hydroponics has been used in commercial farming, research labs, and even urban agriculture. Today, it is seen as an important technology for growing food in places with limited space or water—and now, for growing food in space.</p>
+        </div>
+    </div>
+</body>
+</html>

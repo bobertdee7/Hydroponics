@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-image: url('../images/GRB_bg.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            font-family: 'Berlin Sans FB', Arial, sans-serif;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .back-button img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .title-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .main-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .text-box {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .text-box p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .text-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <img src="../images/Back.png" alt="Back">
+    </a>
+    
+    <div class="content-container">
+        <img src="../images/GRB_title.png" alt="GRB Title" class="title-image">
+        
+        <img src="../images/GRB_pic.png" alt="GRB Picture" class="main-image">
+        
+        <div class="text-box">
+            <p>The multilayer greenhouse window was designed to protect plants from the Moon’s harsh environment. It has three layers, and each one has a different job. The first layer is fused silica glass, which can survive extremely high temperatures. The second layer is aluminum oxynitride, a very strong transparent material that can protect the greenhouse from small asteroid impacts. The third layer is made of hydrogen‑rich hBNNTs, which block dangerous galactic cosmic radiation.</p>
+            
+            <p>Other options were considered, like using metal‑organic frameworks (MOFs) or making a single‑layer window. MOFs can store more hydrogen but only work at extremely cold temperatures and are not naturally transparent. A single‑layer window was also not practical because no single material can handle radiation, heat, and impacts all at once. The multilayer design is better because it lets each layer focus on one job, can be partly built using lunar materials, and can be upgraded in the future by replacing individual layers.</p>
+        </div>
+    </div>
+</body>
+</html>

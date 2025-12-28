@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        
+        .background-container {
+            width: 100%;
+            position: relative;
+            background-image: url('images/Main.jpg');
+            background-size: 100% auto;
+            background-position: top center;
+            background-repeat: no-repeat;
+            /* Aspect ratio container - adjust padding-bottom to match your image's aspect ratio */
+            /* For example: if image is 1920x1080, use 56.25% (1080/1920 * 100) */
+            /* If image is 1920x1440, use 75% (1440/1920 * 100) */
+            padding-bottom: 100%; /* Adjust this value based on your image aspect ratio */
+        }
+        
+        .pointer-button {
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            width: 13vw;
+            height: auto;
+        }
+        
+        .pointer-button:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Position each button on the hand/circle spots */
+        /* Adjust these percentages based on the actual positions in Main.jpg */
+        #button1 {
+            top: 20.2%;
+            left: 15.3%;
+        }
+        
+        #button2 {
+            top: 35.5%;
+            right: 26.5%;
+        }
+        
+        #button3 {
+            top: 38.3%;
+            left: 21.7%;
+        }
+        
+        #button4 {
+            top: 34.2%;
+            left: 46.5%;
+        }
+        
+        #button5 {
+            top: 36.9%;
+            right: 11%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <!-- Five image buttons with Pointer.png positioned on the hand/circle spots -->
+        <a href="html/GRB.html">
+            <img src="images/Pointer.png" alt="Button 1" class="pointer-button" id="button1">
+        </a>
+    
+    <a href="html/History.html">
+        <img src="images/Pointer.png" alt="Button 2" class="pointer-button" id="button2">
+    </a>
+    
+    <a href="html/Current_space_farm.html">
+        <img src="images/Pointer.png" alt="Button 3" class="pointer-button" id="button3">
+    </a>
+    
+    <a href="html/Regeneration.html">
+        <img src="images/Pointer.png" alt="Button 4" class="pointer-button" id="button4">
+    </a>
+    
+    <a href="html/GMO.html">
+        <img src="images/Pointer.png" alt="Button 5" class="pointer-button" id="button5">
+    </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regeneration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-image: url('../images/Regeneration_bg.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            font-family: 'Berlin Sans FB', Arial, sans-serif;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .back-button img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .title-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .main-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .text-box {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .text-box p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .text-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <img src="../images/Back.png" alt="Back">
+    </a>
+    
+    <div class="content-container">
+        <img src="../images/Regeneration_title.png" alt="Regeneration Title" class="title-image">
+        
+        <img src="../images/Regeneration_pic.png" alt="Regeneration Picture" class="main-image">
+        
+        <div class="text-box">
+            <p>The AI system is designed to run the greenhouse almost completely on its own. It uses sensors to monitor plant health, nutrient levels, water use, and possible contamination. The AI can detect problems early, adjust the system automatically, and recycle water and nutrients so almost nothing is wasted. It also processes human waste into safe fertilizer, helping create a closed loop system where everything is reused.</p>
+            
+            <p>Manual control systems were rejected because astronauts don’t have enough time to constantly manage the greenhouse. Traditional automated systems were also not good enough because they can’t learn from mistakes or adapt to unexpected changes. AI is better because it can predict problems, react quickly, and operate with very little human help—something that is essential for long term missions on the Moon or beyond.</p>
+        </div>
+    </div>
+</body>
+</html>

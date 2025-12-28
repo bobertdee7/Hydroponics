@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Space Farm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-image: url('../images/Current_space_farm_bg.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            font-family: 'Berlin Sans FB', Arial, sans-serif;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .back-button img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .main-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .text-box {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .text-box p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .text-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <img src="../images/Back.png" alt="Back">
+    </a>
+    
+    <div class="content-container">
+        <img src="../images/Current_space_farm_pic.png" alt="Current Space Farm Picture" class="main-image">
+        
+        <div class="text-box">
+            <p>Right now, space farming is still very limited. Most experiments happen on the International Space Station, where astronauts grow small plants using hydroponics. Hydroponics works well in space because it doesn’t need soil and lets scientists control nutrients and water very precisely. Some plants like lettuce, kale, and dwarf wheat have been grown successfully, but the systems are small and still need a lot of human attention.</p>
+            
+            <p>On Earth, hydroponics has become much more advanced. Modern hydroponic farms use sensors, automation, and controlled environments to grow plants faster and with less water. Hydroponics can grow up to 134% more vegetables than soil farming and uses up to 98% less water. Vertical hydroponic farms can even double wheat production compared to regular fields. Even though hydroponics is efficient, it still has problems like high cost and labor needs, which is why new technology is still important—especially for space.</p>
+        </div>
+    </div>
+</body>
+</html>
