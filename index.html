@@ -24,10 +24,9 @@
             background-size: 100% auto;
             background-position: top center;
             background-repeat: no-repeat;
-            /* Aspect ratio container - adjust padding-bottom to match your image's aspect ratio */
-            /* For example: if image is 1920x1080, use 56.25% (1080/1920 * 100) */
-            /* If image is 1920x1440, use 75% (1440/1920 * 100) */
-            padding-bottom: 100%; /* Adjust this value based on your image aspect ratio */
+            /* Aspect ratio container - set padding-bottom to image's aspect ratio */
+            /* Main.jpg is 3200x3836 -> 3836/3200 * 100 = 119.88% */
+            padding-bottom: 119.88%;
         }
         
         .pointer-button {
@@ -45,27 +44,27 @@
         /* Position each button on the hand/circle spots */
         /* Adjust these percentages based on the actual positions in Main.jpg */
         #button1 {
-            top: 12%;
+            top: 10%;
             left: 15.3%;
         }
         
         #button2 {
-            top: 28.5%;
+            top: 23%;
             right: 26.5%;
         }
         
         #button3 {
-            top: 28.3%;
+            top: 24%;
             left: 21.7%;
         }
         
         #button4 {
-            top: 24.2%;
+            top: 22%;
             left: 46.5%;
         }
         
         #button5 {
-            top: 29%;
+            top: 25%;
             right: 11%;
         }
     </style>
