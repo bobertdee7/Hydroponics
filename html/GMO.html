@@ -35,8 +35,9 @@
         }
         
         .back-button img {
-            width: 50%;
-            height: 50%;
+            display: block;
+            width: 96px;
+            height: auto;
         }
         
         .back-button:hover {
@@ -81,6 +82,22 @@
         .text-box p:last-child {
             margin-bottom: 0;
         }
+        /* Page-specific typography overrides */
+        .body-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .references {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .references li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -94,9 +111,14 @@
         <img src="../images/GMO_pic.png" alt="GMO Picture" class="main-image">
         
         <div class="text-box">
-            <p>Plants do not grow normally in low gravity because their roots, water movement, and stress responses get confused. To fix this, the project suggests genetically modifying plants so they can handle the Moon’s 1/6 gravity. Scientists would modify genes related to stress resistance, water use, and gravity sensing. This would help plants grow more reliably and avoid dying early.</p>
-            
-            <p>Other options include conventional breeding or relying only on controlled environments. Conventional breeding takes many generations and is unpredictable, which is too slow for space missions. Controlled environments help with temperature and humidity but cannot fix the biological problems caused by low gravity. Genetic modification is better because it directly changes the plant’s biology, making it faster and more effective for space farming.</p>
+            <div class="body-text">
+                <p>Plants do not grow normally in low gravity because their roots, water movement, and stress responses become disrupted. To fix this, the project suggests genetically modifying plants so they can handle the Moon’s gravity, which is ⅙ the strength of Earth’s gravity. Scientists will modify genes related to stress resistance, water use, and gravity sensing [1]. This will help plants grow more reliably and avoid early deaths.</p>
+                <p>Other options include conventional breeding or relying only on controlled environments. Conventional breeding takes many generations and is unpredictable, which is too slow for space missions [2]. Controlled environments help with temperature and humidity but cannot fix the biological problems caused by low gravity. Genetic modification is better because it directly changes the plant’s biology, making it faster and more effective for space farming.</p>
+            </div>
+            <ol class="references">
+                <li>Iyer-Pascuzzi, Andrea. “Scientists Team with NASA to Grow Crops in Space.” AgWeb, 2025.</li>
+                <li>Rajaseger, G., et al. “Hydroponics: Current Trends in Sustainable Crop Production.” Bioinformation, 2023.</li>
+            </ol>
         </div>
     </div>
 </body>

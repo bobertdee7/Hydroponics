@@ -35,8 +35,9 @@
         }
         
         .back-button img {
-            width: 50%;
-            height: 50%;
+            display: block;
+            width: 96px;
+            height: auto;
         }
         
         .back-button:hover {
@@ -81,6 +82,22 @@
         .text-box p:last-child {
             margin-bottom: 0;
         }
+        /* Page-specific typography overrides */
+        .body-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .references {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .references li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -94,9 +111,16 @@
         <img src="../images/History_pic.png" alt="History Picture" class="main-image">
         
         <div class="text-box">
-            <p>Hydroponics has been around in different forms for thousands of years. Ancient civilizations like the Babylonians and the Aztecs used early versions of soilless farming. In the 1600s, Jan van Helmont showed that plants didn't get their mass from soil, which helped scientists understand plant growth better. In the 1800s, scientists like De Saussure, Boussingault, Sachs, and Knop discovered the nutrients plants need and grew plants in mineral water solutions. This research became the foundation of modern hydroponics.</p>
-            
-            <p>In the 20th century, William Frederick Gericke helped popularize hydroponics as a real farming method. Since then, hydroponics has been used in commercial farming, research labs, and even urban agriculture. Today, it is seen as an important technology for growing food in places with limited space or water—and now, for growing food in space.</p>
+            <div class="body-text">
+                <p>Hydroponics has been around in different forms for thousands of years. Ancient civilizations like the Babylonians and the Aztecs used early versions of soilless farming [1;2]. In the 1600s, Jan van Helmont showed that plants didn't get their mass from soil, which helped scientists understand plant growth better. In the 1800s, scientists like De Saussure, Boussingault, Sachs, and Knop discovered the nutrients plants need and grew plants in mineral water solutions, forming the foundation of modern hydroponics [3].</p>
+                <p>In the 20th century, William Frederick Gericke helped popularize hydroponics as a real farming method [4]. Since then, hydroponics has been used in commercial farming, research labs, and even urban agriculture. Today, it is seen as an important technology for growing food in places with limited space or water — and now, for growing food in space.</p>
+            </div>
+            <ol class="references">
+                <li>Coe, Sophie D. “The Chinampas of Mexico.” Scientific American, 1964.</li>
+                <li>Dalley, Stephanie. The Mystery of the Hanging Garden of Babylon: An Elusive World Wonder Traced. Oxford University Press, 2013.</li>
+                <li>Resh, Howard M. Hydroponic Food Production. CRC Press, 2022.</li>
+                <li>Gericke, William F. “Hydroponics — Crop Production in Liquid Culture Media.” Science, vol. 85, no. 2198, 1937, pp. 177–178.</li>
+            </ol>
         </div>
     </div>
 </body>

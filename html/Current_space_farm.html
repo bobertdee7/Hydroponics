@@ -35,8 +35,9 @@
         }
         
         .back-button img {
-            width: 50%;
-            height: 50%;
+            display: block;
+            width: 96px;
+            height: auto;
         }
         
         .back-button:hover {
@@ -75,6 +76,22 @@
         .text-box p:last-child {
             margin-bottom: 0;
         }
+        /* Page-specific typography overrides */
+        .body-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .references {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .references li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -86,9 +103,19 @@
         <img src="../images/Current_space_farm_pic.png" alt="Current Space Farm Picture" class="main-image">
         
         <div class="text-box">
-            <p>Right now, space farming is still very limited. Most experiments happen on the International Space Station, where astronauts grow small plants using hydroponics. Hydroponics works well in space because it doesn’t need soil and lets scientists control nutrients and water very precisely. Some plants like lettuce, kale, and dwarf wheat have been grown successfully, but the systems are small and still need a lot of human attention.</p>
-            
-            <p>On Earth, hydroponics has become much more advanced. Modern hydroponic farms use sensors, automation, and controlled environments to grow plants faster and with less water. Hydroponics can grow up to 134% more vegetables than soil farming and uses up to 98% less water. Vertical hydroponic farms can even double wheat production compared to regular fields. Even though hydroponics is efficient, it still has problems like high cost and labor needs, which is why new technology is still important—especially for space.</p>
+            <div class="body-text">
+                <p>Right now, space farming is still very limited. Most experiments happen on the International Space Station, where astronauts grow small plants using various methods [1]. In space, hydroponics works well because it negates the need for soil while enabling scientists to control nutrients and water. Some plants like lettuce, kale, and dwarf wheat have been grown successfully, but the systems are small and still need a lot of human attention [2].</p>
+                <p>On Earth, hydroponics has become much more advanced. Modern hydroponic farms use sensors, automation, and controlled environments to grow plants faster and with less water [3]. Farming with hydroponics can grow up to 134% more vegetables than soil farming [4; 5] and use up to 98% less water [6]. Vertical hydroponic farms can even grow twice as much wheat compared to regular fields [7]. Even though hydroponics is efficient, it still has problems like excessive cost and labor needs, which is why new technology is still important, especially for space.</p>
+            </div>
+            <ol class="references">
+                <li>Nelson, Michael. Spaceflight Life Support and Biospherics. Springer, 2010.</li>
+                <li>Iyer-Pascuzzi, Andrea. “Scientists Team with NASA to Grow Crops in Space.” AgWeb, 2025.</li>
+                <li>Rajaseger, G., et al. “Hydroponics: Current Trends in Sustainable Crop Production.” Bioinformation, vol. 19, no. 9, 2023, pp. 925–938.</li>
+                <li>Goh, Y. S., et al. “Micro Tom Tomato Response to Fertilization Rates and the Effect of Cultivation Methods.” Agronomy, vol. 13, no. 3, 2023, p. 856.</li>
+                <li>Li, Z., et al. “Performance Analysis of Two Typical Greenhouse Lettuce Production Systems Using a Life Cycle Assessment Approach.” Frontiers in Plant Science, vol. 14, 2023, p. 1165856.</li>
+                <li>Velazquez Gonzalez, R. S., et al. “A Review on Hydroponics and the Technologies Associated for Medium  and Small Scale Operations.” Agriculture, vol. 12, no. 5, 2022, p. 646.</li>
+                <li>Jones, J. “Hydroponics Yields Versus Field Grown Harvest Weights.” Grozine, 2014.</li>
+            </ol>
         </div>
     </div>
 </body>

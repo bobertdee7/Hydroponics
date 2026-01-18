@@ -35,8 +35,9 @@
         }
         
         .back-button img {
-            width: 50%;
-            height: 50%;
+            display: block;
+            width: 96px;
+            height: auto;
         }
         
         .back-button:hover {
@@ -81,6 +82,22 @@
         .text-box p:last-child {
             margin-bottom: 0;
         }
+        /* GRB page-specific typography overrides */
+        .body-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .references {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .references li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -94,9 +111,18 @@
         <img src="../images/GRB_pic.png" alt="GRB Picture" class="main-image">
         
         <div class="text-box">
-            <p>The multilayer greenhouse window was designed to protect plants from the Moon’s harsh environment. It has three layers, and each one has a different job. The first layer is fused silica glass, which can survive extremely high temperatures. The second layer is aluminum oxynitride, a very strong transparent material that can protect the greenhouse from small asteroid impacts. The third layer is made of hydrogen‑rich hBNNTs, which block dangerous galactic cosmic radiation.</p>
-            
-            <p>Other options were considered, like using metal‑organic frameworks (MOFs) or making a single‑layer window. MOFs can store more hydrogen but only work at extremely cold temperatures and are not naturally transparent. A single‑layer window was also not practical because no single material can handle radiation, heat, and impacts all at once. The multilayer design is better because it lets each layer focus on one job, can be partly built using lunar materials, and can be upgraded in the future by replacing individual layers.</p>
+            <div class="body-text">
+                <p>The multilayer greenhouse window was designed to protect plants from the Moon’s harsh environment. It has three layers, and each one has a different job. The first layer is fused silica glass, which can survive extremely high temperatures [1]. The second layer is aluminum oxynitride, a very strong transparent material that can protect the greenhouse from small asteroid impacts [2]. The third layer is made of hydrogen rich hBNNTs, which will block dangerous galactic cosmic radiation [3].</p>
+                <p>Other options were considered, like using metal organic frameworks (MOFs) or making a single layer window. MOFs can store more hydrogen but only work at extremely cold temperatures and are not naturally transparent [4;5]. A single layer window was also not practical because no single material can handle radiation, heat, and impacts all at once. The multilayer design is better because it lets each layer focus on one job, can be partly built using lunar materials [6], and can be upgraded in the future by replacing individual layers.</p>
+            </div>
+            <ol class="references">
+                <li>Akisheva, Y., and Y. Gourinat. “Utilisation of Moon Regolith for Radiation Protection and Thermal Insulation in Permanent Lunar Habitats.” Applied Sciences, vol. 11, no. 9, 2021, p. 3853.</li>
+                <li>Gourinat, Y., et al. “Hybrid Material for Radiation Protection in Lunar Environment.” Biomedical Journal of Scientific & Technical Research, vol. 43, no. 4, 2022, pp. 34783–34785.</li>
+                <li>Thibeault, Steven A. Radiation Shielding Materials Containing Hydrogen, Boron, and Nitrogen. NASA, 2012.</li>
+                <li>Yuvaraj, A. R., et al. “Role of Metal Organic Framework in Hydrogen Gas Storage: A Critical Review.” International Journal of Hydrogen Energy, vol. 59, 2024, pp. 1434–1458.</li>
+                <li>Ahmed, A., et al. “Exceptional Hydrogen Storage Achieved by Screening Nearly Half a Million Metal Organic Frameworks.” Nature Communications, vol. 10, 2019, p. 1568.</li>
+                <li>Akisheva, Y., et al. “Regolith Based Lunar Habitats: An Engineering Approach to Radiation Shielding.” CEAS Space Journal, vol. 16, 2024, pp. 667–676.</li>
+            </ol>
         </div>
     </div>
 </body>

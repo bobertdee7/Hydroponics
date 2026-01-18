@@ -35,8 +35,9 @@
         }
         
         .back-button img {
-            width: 50%;
-            height: 50%;
+            display: block;
+            width: 96px;
+            height: auto;
         }
         
         .back-button:hover {
@@ -81,6 +82,22 @@
         .text-box p:last-child {
             margin-bottom: 0;
         }
+        /* Page-specific typography overrides */
+        .body-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .references {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .references li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -94,9 +111,16 @@
         <img src="../images/Regeneration_pic.png" alt="Regeneration Picture" class="main-image">
         
         <div class="text-box">
-            <p>The AI system is designed to run the greenhouse almost completely on its own. It uses sensors to monitor plant health, nutrient levels, water use, and possible contamination. The AI can detect problems early, adjust the system automatically, and recycle water and nutrients so almost nothing is wasted. It also processes human waste into safe fertilizer, helping create a closed loop system where everything is reused.</p>
-            
-            <p>Manual control systems were rejected because astronauts don’t have enough time to constantly manage the greenhouse. Traditional automated systems were also not good enough because they can’t learn from mistakes or adapt to unexpected changes. AI is better because it can predict problems, react quickly, and operate with very little human help—something that is essential for long term missions on the Moon or beyond.</p>
+            <div class="body-text">
+                <p>The AI system we propose is designed to run the greenhouse almost completely on its own. It uses sensors to monitor plant health, nutrient levels, water use, and possible contamination. The AI can detect problems early, adjust the system automatically, and recycle water and nutrients so almost nothing is wasted or lost [1]. Additionally, it processes human waste into safe fertilizer, helping create a closed loop system where everything is reused [2;3].</p>
+                <p>Manual control systems were rejected because astronauts don’t have enough time to constantly manage the greenhouse. Traditional automated systems also lack the ability to learn from mistakes or adapt to unexpected changes. AI is better because it can predict problems, react quickly, and operate with very little human help — something essential for long term missions on the Moon or beyond [4].</p>
+            </div>
+            <ol class="references">
+                <li>Vermeulen, T., et al. “Stoichiometric Model of a Fully Closed Bioregenerative Life Support System.” Frontiers in Astronomy and Space Sciences, 2023.</li>
+                <li>Hall, L. “Synthetic Biology for Recycling Human Waste into Nutraceuticals and Materials.” NASA, 2015.</li>
+                <li>Atkinson, C. “Recycling Nutrients from Crop Residues for Space Applications.” NASA Technical Reports Server, 2025.</li>
+                <li>Seedhouse, Erik. Life Support Systems for Humans in Space. Springer, 2025</li>
+            </ol>
         </div>
     </div>
 </body>
